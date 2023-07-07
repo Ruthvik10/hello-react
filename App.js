@@ -11,6 +11,14 @@
  * </div>
  */
 
+/**
+ * React is a JS library and React elements are JS objects at the end of the day.
+ * They are not HTML elements yet.
+ * ReactDOM is responsible for converting the React elements (JS objects) to HTML
+ * ReactDOM is separate from the React library itself because React does not have concern itself with
+ * kind of platforms it is going to render on. It could be a browser or mobile and so on.
+ * That responsibility is offloaded to a different library and in the case of web, it is ReactDOM
+ */
 const parent = React.createElement('div', { id: 'parent' }, [
     React.createElement('div', { id: 'child1' }, [
         React.createElement('h1', { className: 'heading' }, "I'm a h1 tag"),
